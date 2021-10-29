@@ -1,0 +1,68 @@
+body{
+    background-color: #ffd0d0;
+}
+
+header {
+    margin-top: 50px;
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Franklin Gothic Medium';
+    font-size: 50px;
+    color:lightsalmon;
+}
+
+h3 {
+    font-size: 25px;
+    color:salmon;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2 {
+    display: inline-block;
+    font-family: 'Segoe UI';
+    color:salmon;
+    margin-left: 50px;
+}
+
+#menu_itens {
+    margin-right: 100px;
+}
+
+#row1, #row2 {
+    justify-content: center;
+}
+
+#row1 {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px ;
+}
+
+
+#row2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.margin {
+    margin-left: 50px;
+}
+
+.title3, .price {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.img {
+    border-radius: 10px;
+    box-shadow: 2px 2px salmon;
+}

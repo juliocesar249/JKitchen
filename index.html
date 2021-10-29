@@ -1,67 +1,76 @@
+<!--
+---------------------------------------------
+    ADICIONAR "CONTATO" AO LADO DE "MENU"
+---------------------------------------------
+-->
+
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
     <head>
         <meta https-equiv="UTF-8">
-        <title>Site</title>
+        <title>JKitchen</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <main>
-            <h1>JKitchen</h1>
+        <header>
+            <h1>JK<sub>itchen</sub></h1>
             <h3>O melhor restaurante com a melhor comida!</h3>
-        </main>
+        </header>
         <section>
             <div id="menu">
                 <h2>Menu</h2>
                 <div id="menu_itens">
-                    <div id="menu_item_arroz">
-                        <p>
-                            <!--Encontrar uma forma de subtiuir os H3 por divs, com name, id ou class.-->
-                            <h3>Tigela de Arroz</h3>
-                            <input type="checkbox" name="checkbox_arroz" id="checkbox_arroz">
-                            <input type="image" src="foods/arroz.jpeg" alt="Tigela com Arroz" id="imgTigelaArroz">
-                            <div id="arrozPrice">R$16,00</div>
-                        </p>
+                    <div id="row1">
+                        <div id="menu_item_arroz" class="margin">
+                            <p>
+                                <div class="title3">Tigela de Arroz</div>
+                                <input type="checkbox" name="checkbox_arroz" id="checkbox_arroz" class="menu_item_checkbox">
+                                <input type="image" src="foods/arroz.jpeg" alt="Tigela com Arroz" id="imgTigelaArroz" class="img">
+                                <div id="arrozPrice" class="price">R$16,00</div>
+                            </p>
+                        </div>
+                        <div id="menu_item_feijao" class="margin">
+                            <p>
+                                <div class="title3">Tigela de Feijão</div>
+                                <input type="checkbox" name="checkbox_feijao" id="checkbox_feijao" class="menu_item_checkbox">
+                                <input type="image" src="foods/feijao.jpeg" alt="Tigela com feijao" id="imgTigelaFeijao" class="img">
+                                <div id="feijaoPrice" class="price">R$18,00</div>
+                            </p>
+                        </div>              
+                        <div id="menu_item_lasanha" class="margin">
+                            <p>
+                                <div class="title3">Lasanha</div>
+                                <input type="checkbox" name="checkbox_lasanha" id="checkbox_lasanha" class="menu_item_checkbox">
+                                <input type="image" src="foods/lazanha.jpg" alt="Lasanha" id="imgLasanha" class="img">
+                                <div id="lasanhaPrice" class="price">R$10,00</div>
+                            </p>
+                        </div>
                     </div>
-                    <div id="menu_item_feijao">
-                        <p>
-                            <h3>Tigela de Feijão</h3>
-                            <input type="checkbox" name="checkbox_feijao" id="checkbox_feijao">
-                            <input type="image" src="foods/feijao.jpeg" alt="Tigela com feijao" id="imgTigelaFeijao">
-                            <div id="feijaoPrice">R$18,00</div>
-                        </p>
-                    </div>              
-                    <div id="menu_item_lasanha">
-                        <p>
-                            <h3>Lasanha</h3>
-                            <input type="checkbox" name="checkbox_lasanha" id="checkbox_lasanha">
-                            <input type="image" src="foods/lazanha.jpg" alt="Lasanha" id="imgLasanha">
-                            <div id="lasanhaPrice">R$10,00</div>
-                        </p>
-                    </div>
-                    <div id="menu_item_strongonoff">
-                        <p>
-                            <h3>Strogonoff</h3>
-                            <input type="checkbox" name="checkbox_strogonoff" id="checkbox_strogonoff">
-                            <input type="image" src="foods/strogonoff.jpg" alt="Strogonoff" id="imgStrogonoff">
-                            <div id="strogonoffPrice">R$13,00</div>
-                        </p>
-                    </div>
-                    <div id="menu_item_costDePorc">
-                        <p>
-                            <h3>Costela de Porco</h3>
-                            <input type="checkbox" name="checkbox_costDePorc" id="checkbox_costDePorc">
-                            <input type="image" src="foods/costeladeporco.jpg" alt="Costela de Porco" id="imgCostDePorc">
-                            <div id="costDePorcPrice">R$20,00</div>
-                        </p>
-                    </div>
-                    <div id="menu_item_amondega">
-                        <p>
-                            <h3>Amôndega</h3>
-                            <input type="checkbox" name="checkbox_amondega" id="checkbox_amondega">
-                            <input type="image" src="foods/amondegacaseira.jpg" alt="Costela de Porco" id="imgAmondega">
-                            <div id="amondegaPrice">R$7,00</div>
-                        </p>
+                    <div id="row2">
+                        <div id="menu_item_strongonoff" class="margin">
+                            <p>
+                                <div class="title3">Strogonoff</div>
+                                <input type="checkbox" name="checkbox_strogonoff" id="checkbox_strogonoff" class="menu_item_checkbox">
+                                <input type="image" src="foods/strogonoff.jpg" alt="Strogonoff" id="imgStrogonoff" class="img">
+                                <div id="strogonoffPrice" class="price">R$13,00</div>
+                            </p>
+                        </div>
+                        <div id="menu_item_costDePorc" class="margin">
+                            <p>
+                                <div class="title3">Costela de Porco</div>
+                                <input type="checkbox" name="checkbox_costDePorc" id="checkbox_costDePorc" class="menu_item_checkbox">
+                                <input type="image" src="foods/costeladeporco.jpg" alt="Costela de Porco" id="imgCostDePorc" class="img">
+                                <div id="costDePorcPrice" class="price">R$20,00</div>
+                            </p>
+                        </div>
+                        <div id="menu_item_amondega" class="margin">
+                            <p>
+                                <div class="title3">Amôndega</div>
+                                <input type="checkbox" name="checkbox_amondega" id="checkbox_amondega" class="menu_item_checkbox">
+                                <input type="image" src="foods/amondegacaseira.jpg" alt="Costela de Porco" id="imgAmondega" class="img">
+                                <div id="amondegaPrice" class="price">R$7,00</div>
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
