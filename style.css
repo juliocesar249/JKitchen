@@ -5,6 +5,15 @@ body{
 header {
     margin-top: 50px;
     text-align: center;
+    border: solid;
+    border-radius: 20px;
+    border-color: salmon;
+    border-width: 10px;
+    border-style: dotted;
+    margin-right: 340px;
+    margin-left: 340px;
+    margin-bottom: 50px;
+    padding-bottom: 20px;
 }
 
 h1 {
@@ -19,11 +28,19 @@ h3 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-h2 {
-    display: inline-block;
+.menu_buttons {
     font-family: 'Segoe UI';
-    color:salmon;
-    margin-left: 50px;
+    color: salmon;
+    text-align: center;
+}
+
+.menu_button {
+    display: inline-block;
+    width: 20%;
+    background-color: rgb(248, 177, 149);
+    border-radius: 10px;
+    border: solid;
+    
 }
 
 #menu_itens {
