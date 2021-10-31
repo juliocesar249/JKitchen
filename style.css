@@ -84,11 +84,21 @@ h3 {
     box-shadow: 2px 2px salmon;
 }
 
+#contact_informations {
+    margin-left: 45%;
+    margin-right: 550px;
+}
+
+.contact {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
 #instagram_icon {
     margin-left: 133px;
     margin-top: -56px;
     cursor: pointer;
-    margin-right: 1190px;
+    margin-right: 575px;
 }
 
 .insta_border {
@@ -100,6 +110,7 @@ h3 {
     padding: 5px;
     padding-bottom: 1px;
     border-radius: 10px;
+    margin-right: -55px;
 }
 
 .insta_void {
@@ -117,7 +128,7 @@ h3 {
     border-radius: 500px;
     background: linear-gradient(45deg, red 5%, rgb(196, 0, 196) 50%);
     margin-top: -18px;
-    margin-left: 16px;
+    margin-left: 10px;
 }
 
 .insta_cam {
@@ -125,8 +136,8 @@ h3 {
     height: 30px;
     border-radius: 50px;
     background: linear-gradient(45deg, yellow 0%, orange 2%, red 50%, rgb(196, 0, 196) 100%);
-    margin-left: -10px;
-    margin-top: -3px;
+    margin-left: -14px;
+    margin-top: -4px;
     margin-bottom: -15px;
 }
 
@@ -136,6 +147,6 @@ h3 {
     border-radius: 10px;
     background-color: #ffd0d0;
     position: absolute;
-    left: 22px;
-    top: 38%;
+    left: 18px;
+    top: 36%;
 }
