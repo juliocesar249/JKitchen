@@ -1,0 +1,74 @@
+header {
+    animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+    0% {
+        border-color: #ffd0d0;
+    }
+
+    12.5% {
+        border-color: #ffd0d0;
+        border-top-color: salmon;
+    }
+
+    25% {
+        border-color: #ffd0d0;
+    }
+
+    37.5% {
+        border-color: #ffd0d0;
+        border-right-color: salmon;
+    }
+
+    50% {
+        border-color: #ffd0d0;
+    }
+
+    62.5% {
+        border-color: #ffd0d0;
+        border-bottom-color: salmon;
+    }
+
+    75% {
+        border-color: #ffd0d0;
+    }
+
+    87.5% {
+        border-color: #ffd0d0;
+        border-left-color: salmon;
+    }
+
+    100% {
+        border-color: #ffd0d0;
+    }
+}
+
+.menu_button:hover {
+    filter: brightness(1.2);
+}
+
+.margin {
+    transition: transform 0.3s;
+}
+
+.margin:hover {
+    transform: scale(1.05);
+}
+
+.contact {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.contact:hover {
+    transform: scale(1.05);
+}
+
+.social_plataform {
+    transition: transform 0.3s;
+}
+
+.social_plataform:hover {
+    transform: scale(1.1);
+}
