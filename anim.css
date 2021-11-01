@@ -56,6 +56,10 @@ header {
     transform: scale(1.05);
 }
 
+.purchase_button:hover {
+    filter: brightness(1.2);
+}
+
 .contact {
     cursor: pointer;
     transition: transform 0.3s;

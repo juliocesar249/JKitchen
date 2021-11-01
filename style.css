@@ -85,6 +85,26 @@ h3 {
     box-shadow: 2px 2px salmon;
 }
 
+#confirm_button {
+    text-align: center;
+}
+
+.purchase_button {
+    width: 100px;
+    height: 50px;
+    background: lightsalmon;
+    border: solid salmon;
+    border-radius: 10px;
+    color: black;
+    font-size: 15px;
+    font-family: cursive;
+    font-weight:1000;
+    display: block;
+    margin-left: 48%;
+    margin-right: auto;
+    cursor: pointer;
+}
+
 #contact_informations {
     margin-left: 45%;
     margin-right: 550px;
