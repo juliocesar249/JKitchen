@@ -89,6 +89,7 @@ h3 {
     text-align: center;
 }
 
+/*
 .purchase_button {
     width: 100px;
     height: 50px;
@@ -103,7 +104,20 @@ h3 {
     margin-left: 48%;
     margin-right: auto;
     cursor: pointer;
+    text-decoration: none;
 }
+*/
+
+/*
+#totSum {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: larger;
+    display: inline-block;
+    transform: translate3d(720px, -35px, 0px);
+}
+*/
 
 #contact_informations {
     margin-left: 45%;
@@ -170,4 +184,67 @@ h3 {
     position: absolute;
     left: 18px;
     top: 36%;
+}
+
+.modalWindow {
+    position: fixed;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: larger;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	opacity:0;
+	transition: opacity 400ms ease-in;
+	pointer-events: none;
+}
+
+.modalWindow:target {
+    opacity:1;
+	pointer-events: auto;
+}
+
+.modalWindow > div {
+    width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+    border: solid salmon;
+	background: #ffd0d0;
+}
+
+#payment {
+    display: none;
+}
+
+#payment:target {
+    display: block;
+    pointer-events: auto;   
+}
+
+.confirm_button, .cancel_button, .purchase_confirm {
+    text-decoration: none;
+    color: black;
+}
+
+.purchase_confirm {
+    width: 100px;
+    height: 50px;
+    background: lightsalmon;
+    border: solid salmon;
+    border-radius: 10px;
+    color: black;
+    font-size: 15px;
+    font-family: cursive;
+    font-weight:1000;
+    display: block;
+    margin-left: 48%;
+    margin-right: auto;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
 }

@@ -60,6 +60,10 @@ header {
     filter: brightness(1.2);
 }
 
+.purchase_confirm:hover {
+    filter: brightness(1.2);
+}
+
 .contact {
     cursor: pointer;
     transition: transform 0.3s;
@@ -75,4 +79,13 @@ header {
 
 .social_plataform:hover {
     transform: scale(1.1);
+}
+
+.confirm_button, .cancel_button {
+    border: solid #ffd0d0 2px;
+}
+
+.confirm_button:hover, .cancel_button:hover {
+    border-color: black;
+    border-radius: 5px;
 }

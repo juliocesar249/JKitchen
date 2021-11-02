@@ -8,7 +8,7 @@
     </head>
     <body>
         <header>
-            <h1>JK<sub>itchen</sub></h1>
+            <h1 id="h1">JK<sub>itchen</sub></h1>
             <h3>O melhor restaurante com a melhor comida!</h3>
         </header>
         <section>
@@ -65,13 +65,29 @@
                             <p>
                                 <div class="title3">Amôndega</div>
                                 <input type="checkbox" name="checkbox_amondega" id="checkbox_amondega" class="menu_item_checkbox">
-                                <input type="image" src="foods/amondegacaseira.jpg" alt="Costela de Porco" id="imgAmondega" class="img">
+                                <input type="image" src="foods/amondega.jpg" alt="Amondega" id="imgAmondega" class="img">
                                 <div id="amondegaPrice" class="price">R$7,00</div>
                             </p>
                         </div>
                     </div>
                     <div id="confirm_buttom">
-                        <button type="submit" onclick="confirmPurchase()" class="purchase_button" id="purchse_button">Confirmar Pedidos</button>
+                        <!--<button type="submit" onclick="confirmPurchase()" class="purchase_button" id="purchse_button">Confirmar Pedidos</button>
+                        <div id="totSum">
+                            <p id="totPrice"></p>
+                        </div>-->
+                                            
+                        <a href="#modalWindow" onclick="confirmPurchase()" class="purchase_confirm">Confirmar Pedidos</a>
+                    </div>
+                    <div class="modalWindow" id="modalWindow">
+                        <div id="totSum">
+                            <p id="titleModal">Valor Total da Compra</p>
+                            <p id="totPrice">R$7,00</p>
+                            <a href="#payment" title="Pagar" class="confirm_button" onclick="payPurchase()">Pagar</a>
+                            <a href="#cancel" title="Cancel" class="cancel_button" onclick="cancelPurchase()">Cancelar</a>                
+                        </div>
+                        <div id="payment">
+                            <h3>Pagamento realizado</h3>
+                        </div> 
                     </div>
                 </div>
                 <div id="contact_informations">
