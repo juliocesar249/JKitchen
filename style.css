@@ -217,13 +217,52 @@ h3 {
 	background: #ffd0d0;
 }
 
-#payment {
-    display: none;
+.modalWindow2 {
+    position: fixed;
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: larger;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+    opacity: 0;
+	background: rgba(0,0,0,0.8);
+	z-index: 99999;
+	pointer-events: none;
 }
 
-#payment:target {
-    display: block;
-    pointer-events: auto;   
+.modalWindow2 > div{
+    width: 400px;
+	position: relative;
+	margin: 10% auto;
+	padding: 5px 20px 13px 20px;
+	border-radius: 10px;
+    border: solid salmon;
+	background: #ffd0d0;
+}
+
+.fade-in-out {
+    animation: fade-in-out 3s forwards;
+    animation-timing-function: ease-out;
+}
+
+@keyframes fade-in-out {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
 }
 
 .confirm_button, .cancel_button, .purchase_confirm {

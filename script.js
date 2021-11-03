@@ -88,7 +88,16 @@ function cancelPurchase() {
     totPrice = 0
 }
 
+let modalWindow2 = document.getElementById('modalWindow2')
+
 function payPurchase() {
     totPrice = 0
-    
+    modalWindow2.classList.add('fade-in-out')
+    let anim = modalWindow2.getAnimations()
+    window.setTimeout(removeClass, 3000)
 }
+
+function removeClass() {
+    modalWindow2.classList.remove('fade-in-out')
+}
+
