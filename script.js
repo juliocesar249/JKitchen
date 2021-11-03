@@ -27,7 +27,7 @@ email.onclick = function () {
 
 let twitter = document.getElementById('twitter_icon')
 twitter.onclick = function () {
-    open('https://twitter.com/search?q=Algum%20Perfil&src=typeahead_click')
+    open('https://twitter.com/juliocesar2491')
 }
 
 let facebook = document.getElementById('facebook_icon')
@@ -37,7 +37,7 @@ facebook.onclick = function () {
 
 let instagram = document.getElementById('instagram_icon')
 instagram.onclick = function () {
-    open('https://www.instagram.com/algum_perfil.ae/?hl=pt-br')
+    open('https://www.instagram.com/juliocesar_amarals/')
 }
 
 let checkBoxes = document.querySelectorAll('.menu_item_checkbox')
@@ -51,9 +51,6 @@ let price = {
     costDePorcoPrice: Number(itemPriceString[4].outerText.slice(2, -3)),
     amondegaPrice: Number(itemPriceString[5].outerText.slice(2, -3))
 }
-
-let imgs = document.querySelectorAll('input.img')
-
 
 let totPrice = 0
 
@@ -89,15 +86,23 @@ function cancelPurchase() {
 }
 
 let modalWindow2 = document.getElementById('modalWindow2')
+modalWindow2.style.display = 'none'
+let textarea = document.querySelector('#obs')
 
 function payPurchase() {
-    totPrice = 0
-    modalWindow2.classList.add('fade-in-out')
-    let anim = modalWindow2.getAnimations()
-    window.setTimeout(removeClass, 3000)
+    
+    if (totPrice == 0) {
+        alert('Erro ao realizar o pagamento')
+    } else {
+        totPrice = 0
+        modalWindow2.style.display = ''
+        modalWindow2.classList.add('fade-in-out')
+        window.setTimeout(makeChanges, 3000)
+    }
 }
 
-function removeClass() {
+function makeChanges() {
     modalWindow2.classList.remove('fade-in-out')
+    modalWindow2.style.display = ''
+    window.location.reload(true)
 }
-
