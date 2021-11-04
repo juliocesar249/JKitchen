@@ -1,0 +1,115 @@
+header {
+    animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+    0% {
+        border-color: #4F2B2D;
+    }
+
+    12.5% {
+        border-color: #4F2B2D;
+        border-top-color: #FFA07A;
+    }
+
+    25% {
+        border-color: #4F2B2D;
+    }
+
+    37.5% {
+        border-color: #4F2B2D;
+        border-right-color: #FFA07A;
+    }
+
+    50% {
+        border-color: #4F2B2D;
+    }
+
+    62.5% {
+        border-color: #4F2B2D;
+        border-bottom-color: #FFA07A;
+    }
+
+    75% {
+        border-color: #4F2B2D;
+    }
+
+    87.5% {
+        border-color: #4F2B2D;
+        border-left-color: #FFA07A;
+    }
+
+    100% {
+        border-color: #4F2B2D;
+    }
+}
+
+.menu_button:hover {
+    filter: brightness(1.2);
+}
+
+.margin {
+    transition: transform 0.3s;
+}
+
+.margin:hover {
+    transform: scale(1.05);
+}
+
+.purchase_button:hover {
+    filter: brightness(1.2);
+}
+
+.purchase_confirm:hover {
+    filter: brightness(1.2);
+}
+
+.contact {
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.contact:hover {
+    transform: scale(1.05);
+}
+
+.social_plataform {
+    transition: transform 0.3s;
+}
+
+.social_plataform:hover {
+    transform: scale(1.1);
+}
+
+.confirm_button, .cancel_button {
+    border: solid #4F2B2D 2px;
+}
+
+.confirm_button:hover, .cancel_button:hover {
+    border-color: black;
+    border-radius: 5px;
+}
+
+
+.fade-in-out {
+    animation: fade-in-out 3s forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fade-in-out {
+    0% {
+        opacity: 0;
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
