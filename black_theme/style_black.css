@@ -138,6 +138,7 @@ h3 {
 	border-radius: 10px;
     border: solid #FA8072;
 	background: #4F2B2D;
+    color: lightsalmon;
 }
 
 #obs {
@@ -191,7 +192,7 @@ h3 {
 
 .confirm_button, .cancel_button, .purchase_confirm {
     text-decoration: none;
-    color: black;
+    color: lightsalmon;
 }
 
 .purchase_confirm {
