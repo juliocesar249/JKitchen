@@ -96,8 +96,8 @@ header {
     border: solid #4F2B2D 2px;
 }
 
-.confirm_button:hover, .cancel_button:hover {
-    border-color: black;
+.confirm_button:hover, .cancel_button:hover, .forms:hover {
+    border-color: white;
     border-radius: 5px;
 }
 
