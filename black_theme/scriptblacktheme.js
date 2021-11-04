@@ -53,6 +53,34 @@ instagram.onclick = function () {
     open('https://www.instagram.com/juliocesar_amarals/')
 }
 
+let paymentForms = document.querySelectorAll('.forms')
+console.log(paymentForms)
+
+let formResult;
+
+function clickadd(form) {
+    form.addEventListener('click', select)
+    function select() {
+        if(form == paymentForms[0]) {
+            form.classList.add('selected')
+            form.classList.remove('forms')
+            paymentForms[1].classList.add('forms')
+            paymentForms[1].classList.remove('selected')
+        }
+        if(form == paymentForms[1]) {
+            form.classList.add('selected')
+            form.classList.remove('forms')
+            paymentForms[0].classList.add('forms')
+            paymentForms[0].classList.remove('selected')
+        }
+        formResult = form
+        console.log(formResult)
+    }
+}
+
+paymentForms.forEach(clickadd)
+
+
 let checkBoxes = document.querySelectorAll('.menu_item_checkbox')
 
 let itemPriceString = document.querySelectorAll('.price')
@@ -94,8 +122,15 @@ function confirmPurchase() {
     totSum.innerText = 'R$'+totPrice+',00'
 }
 
+function notSelect(form) {
+    form.classList.remove('selected')
+    form.classList.add('forms')
+}
+
+
 function cancelPurchase() {
     totPrice = 0
+    paymentForms.forEach(notSelect)
 }
 
 let modalWindow2 = document.getElementById('modalWindow2')
@@ -104,8 +139,10 @@ let textarea = document.querySelector('#obs')
 
 function payPurchase() {
     
-    if (totPrice == 0) {
+    if (totPrice == 0 || formResult === undefined) {
         alert('Erro ao realizar o pagamento')
+        totPrice = 0
+        paymentForms.forEach(notSelect)
     } else {
         totPrice = 0
         modalWindow2.style.display = ''
