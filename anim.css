@@ -48,6 +48,17 @@ header {
     filter: brightness(1.2);
 }
 
+.right {
+    animation: slideRight 500ms forwards;
+}
+
+@keyframes slideRight {
+    to {
+        transform: translateX(24px);
+        background-color: #FFA07A;
+    }
+}
+
 .margin {
     transition: transform 0.3s;
 }

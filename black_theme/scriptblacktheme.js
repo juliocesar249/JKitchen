@@ -4,21 +4,17 @@ let menuItens = document.getElementById('menu_itens')
 let contactInformations = document.getElementById('contact_informations')
 let buttonTheme = document.getElementById('theme')
 let circleTheme = document.querySelector('.circle_theme')
-let theme = document.querySelector('#style')
-let anim = document.querySelector('#anim')
 
 buttonTheme.addEventListener('click', changeThemeBlack)
 
 function changeThemeBlack() {
-   circleTheme.classList.add('right')
-   /*theme.href = 'black_theme/style_black.css'
-   anim.href = 'black_theme/anim_black.css'*/
-   window.setTimeout(loadHTML, 500)
-}
-
-function loadHTML() {
-    window.location.href = 'blackTheme.html'
-}
+    circleTheme.classList.add('left')
+    window.setTimeout(loadHTML, 500)
+ }
+ 
+ function loadHTML() {
+     window.location.href = 'index.html'
+ }
 
 contactInformations.style.display = 'none'
 
